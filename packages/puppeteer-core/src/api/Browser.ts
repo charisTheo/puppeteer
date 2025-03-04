@@ -92,6 +92,8 @@ export const WEB_PERMISSION_TO_PROTOCOL_PERMISSION = new Map<
   ['payment-handler', 'paymentHandler'],
   ['persistent-storage', 'durableStorage'],
   ['pointer-lock', 'pointerLock'],
+  ['storage-access', 'storageAccess'],
+  ['top-level-storage-access', 'topLevelStorageAccess'],
   // chrome-specific permissions we have.
   ['midi-sysex', 'midiSysex'],
 ]);
@@ -118,7 +120,9 @@ export type Permission =
   | 'notifications'
   | 'payment-handler'
   | 'persistent-storage'
-  | 'pointer-lock';
+  | 'pointer-lock'
+  | 'storage-access'
+  | 'top-level-storage-access';
 
 /**
  * @public
